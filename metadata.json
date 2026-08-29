@@ -1,0 +1,6 @@
+{
+  "name": "InsightAI - Client-Side SaaS Data Analytics Platform",
+  "description": "Production-ready, client-side data analytics platform with automated statistical analysis, interactive charts, rule-based AI insights, and custom reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
