@@ -6,46 +6,69 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**InsightAI** is a high-performance, client-side SaaS data analytics and automated intelligence platform. It transforms raw tabular datasets (CSV, Excel, JSON) into executive dashboards, automated statistical profiles, interactive multidimensional charts, anomaly detection reports, and downloadable PDF presentations — all executed securely in the browser with zero server data storage.
+**InsightAI** is a high-performance, client-side SaaS data analytics and automated intelligence platform. It transforms raw tabular datasets (CSV, Excel, JSON) into executive dashboards, automated statistical profiles, interactive multidimensional charts, anomaly detection reports, and downloadable PDF presentations — all executed securely in the browser with zero server-side data storage.
+
+### 🚀 Live Demo
+
+**[https://insightai-2o.netlify.app/](https://insightai-2o.netlify.app/)**
 
 ---
 
 ## 🌟 Key Features
 
 ### 1. 📁 Instant Multi-Format Dataset Ingestion
-- **Flexible File Support**: Upload `.csv`, `.xlsx`, `.xls`, or `.json` files via drag-and-drop or file picker.
-- **Smart Parsing & Auto-Typing**: Automatically classifies columns into Numeric, Categorical, Datetime, Boolean, or Identifier fields.
-- **Sample Datasets Included**: Pre-loaded benchmark datasets (E-Commerce Sales, SaaS Recurring Revenue & Churn, Employee Performance, Healthcare Analytics) for instant exploration.
+- Upload `.csv`, `.xlsx`, `.xls`, or `.json` files via drag-and-drop or file picker.
+- Automatic column type detection.
+- Supports Numeric, Categorical, Datetime, Boolean, and Identifier fields.
+- Built-in sample datasets for instant exploration.
 
 ### 2. 🔬 Automated Statistical Engine & Profiling
-- **Summary Metrics**: Mean, Median, Mode, Standard Deviation, Variance, Min/Max, Quartiles (Q1, Q3), and IQR.
-- **Data Quality Scoring**: Detection of missing values, null rates, duplicate rows, skewness, and cardinality.
-- **Outlier & Anomaly Detection**: Statistical Z-Score and Interquartile Range (IQR) flags with interactive outlier inspection.
-- **Correlation Matrix**: Dynamic Pearson correlation heatmaps between numeric features.
+- Mean, Median, Mode, Standard Deviation, Variance, Min/Max, Quartiles, and IQR.
+- Data quality scoring.
+- Missing-value and duplicate detection.
+- Skewness and cardinality analysis.
+- Z-Score and IQR-based outlier detection.
+- Dynamic Pearson correlation analysis.
 
-### 3. 📈 Interactive Multi-Chart Visualization Studio
-- **Rich Chart Library**: Built on Recharts — Line, Bar, Stacked Bar, Area, Scatter, Pie, Donut, Radar, and Composed charts.
-- **Interactive Controls**: Group by dimensions, aggregate metrics (Sum, Average, Count, Min, Max), apply filters, sort, and slice date ranges.
-- **Customizable Aesthetics**: Live color palettes, legends, grid lines, tooltips, and animated render transitions.
+### 3. 📈 Interactive Visualization Studio
+- Line, Bar, Stacked Bar, Area, Scatter, Pie, Donut, Radar, and Composed charts.
+- Group-by dimensions and metric selection.
+- Sum, Average, Count, Min, and Max aggregations.
+- Interactive filters and sorting.
+- Animated chart transitions.
+- Customizable legends, grids, tooltips, and chart styling.
 
-### 4. 🧠 Automated Intelligence & Rule-Based Insights
-- **Key Takeaways Generation**: Instant executive summaries summarizing volume, top performers, peak anomalies, and correlations.
-- **Distribution Health**: Automated skewness warnings and data distribution shape descriptions.
-- **Actionable Recommendations**: Algorithmic business advice tailored to detected trends.
+### 4. 🧠 Automated Intelligence
+- Automatic executive summaries.
+- Key data takeaways.
+- Trend and distribution analysis.
+- Outlier and anomaly identification.
+- Correlation-based observations.
+- Actionable data-driven recommendations.
 
-### 5. 📄 Executive Reports & Multi-Format Exports
-- **One-Click PDF Reports**: Generates multi-page executive dossiers complete with KPIs, visual snapshots, and summary tables.
-- **Data Exporting**: Export cleaned and processed datasets to CSV or structured JSON.
-- **Report Customization**: Toggle individual sections (Executive Summary, Correlation Matrix, Charts, Outlier Audit) before exporting.
+### 5. 📄 Executive Reports & Exports
+- One-click PDF report generation.
+- Executive summaries and KPI sections.
+- Correlation and outlier analysis.
+- Export processed datasets as CSV or JSON.
+- Customizable report sections.
 
-### 6. 🎨 Appearance & Customization Engine
-- **Dark, Light & System Themes**: High-contrast, WCAG AA-compliant visual layouts for both dark and light modes.
-- **5 Vibrant Accent Palettes**: Indigo Cyber, Emerald Forest, Violet Nebula, Cyan Neon, and Amber Sunset.
-- **Accessibility & Density**: Compact view option, reduced motion modes, and persistent user preferences in `localStorage`.
+### 6. 🎨 Premium UI & Customization
+- Modern SaaS dashboard interface.
+- Dark, Light, and System themes.
+- Multiple accent palettes.
+- Responsive desktop and mobile layouts.
+- Smooth animations and loading states.
+- Compact/density controls.
+- Accessibility preferences.
+- Persistent user settings using local storage.
 
-### 7. 🔒 100% Client-Side Privacy Guarantee
-- **Zero Server Uploads**: All data parsing, mathematical computations, chart rendering, and PDF generations occur strictly in your browser's V8 engine.
-- **Persistent Local History**: Fast dataset switching and report restoration using encrypted client-side local caching.
+### 7. 🔒 Client-Side Privacy
+- Dataset processing happens directly inside the browser.
+- No server-side dataset storage.
+- Statistical calculations execute locally.
+- Charts and reports are generated locally.
+- Analysis history is persisted locally in the user's browser.
 
 ---
 
@@ -53,51 +76,16 @@
 
 | Layer | Technology |
 | :--- | :--- |
-| **Framework** | [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) |
-| **Build Tool** | [Vite 6](https://vitejs.dev/) |
-| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) + CSS Custom Properties |
-| **Data Visualization** | [Recharts](https://recharts.org/) |
-| **Data Parsing** | [PapaParse](https://www.papaparse.com/) (CSV) + [SheetJS / XLSX](https://sheetjs.com/) (Excel) |
-| **Report Generation** | [jsPDF](https://github.com/parallax/jsPDF) + [html2canvas](https://html2canvas.hertzen.com/) |
-| **Motion & FX** | [Motion](https://motion.dev/) + [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti) |
-| **Icons** | [Lucide React](https://lucide.dev/) |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) (version 18.0.0 or higher recommended)
-- [npm](https://www.npmjs.com/) or [bun](https://bun.sh/)
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/insight-ai.git
-   cd insight-ai
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
-5. **Run type-checking and linter**:
-   ```bash
-   npm run lint
-   ```
+| **Framework** | React 19 + TypeScript |
+| **Build Tool** | Vite 6 |
+| **Styling** | Tailwind CSS v4 |
+| **Data Visualization** | Recharts |
+| **CSV Parsing** | PapaParse |
+| **Excel Parsing** | SheetJS / XLSX |
+| **Report Generation** | jsPDF + html2canvas |
+| **Animations** | Motion |
+| **Icons** | Lucide React |
+| **Deployment** | Netlify |
 
 ---
 
